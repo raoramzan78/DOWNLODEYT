@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+      <feOffset dx="0" dy="4" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGradient)" rx="10" ry="10" />
+  
+  <!-- File Explorer Window -->
+  <rect x="100" y="50" width="600" height="350" rx="6" ry="6" fill="#ffffff" filter="url(#shadow)" />
+  
+  <!-- Window Header -->
+  <rect x="100" y="50" width="600" height="40" rx="6" ry="6" fill="#f1f3f4" />
+  <circle cx="130" cy="70" r="8" fill="#ff6b6b" />
+  <circle cx="160" cy="70" r="8" fill="#ffd93d" />
+  <circle cx="190" cy="70" r="8" fill="#6bff6b" />
+  <text x="400" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">Downloads</text>
+  
+  <!-- Explorer Content -->
+  <rect x="120" y="110" width="560" height="260" fill="#f9f9f9" />
+  
+  <!-- Sidebar -->
+  <rect x="120" y="110" width="120" height="260" fill="#f0f0f0" />
+  <text x="140" y="140" font-family="Arial, sans-serif" font-size="14" fill="#333">Downloads</text>
+  <text x="140" y="170" font-family="Arial, sans-serif" font-size="14" fill="#333">Pictures</text>
+  <text x="140" y="200" font-family="Arial, sans-serif" font-size="14" fill="#333">Documents</text>
+  <text x="140" y="230" font-family="Arial, sans-serif" font-size="14" fill="#333">Music</text>
+  <text x="140" y="260" font-family="Arial, sans-serif" font-size="14" fill="#333">Videos</text>
+  
+  <!-- Downloaded Files -->
+  <rect x="260" y="130" width="400" height="60" rx="4" ry="4" fill="#ffffff" stroke="#ddd" stroke-width="1" />
+  <rect x="270" y="140" width="40" height="40" rx="4" ry="4" fill="#f1f1f1" />
+  <text x="330" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">RAO RAMZAN YT DOWNLOADER_1080p.jpg</text>
+  <text x="330" y="180" font-family="Arial, sans-serif" font-size="12" fill="#777">Downloaded 1 minute ago - 245 KB</text>
+  
+  <rect x="260" y="200" width="400" height="60" rx="4" ry="4" fill="#ffffff" stroke="#ddd" stroke-width="1" />
+  <rect x="270" y="210" width="40" height="40" rx="4" ry="4" fill="#f1f1f1" />
+  <text x="330" y="230" font-family="Arial, sans-serif" font-size="14" fill="#333">RAO RAMZAN YT DOWNLOADER_4K.jpg</text>
+  <text x="330" y="250" font-family="Arial, sans-serif" font-size="12" fill="#777">Downloaded 30 seconds ago - 512 KB</text>
+  
+  <rect x="260" y="270" width="400" height="60" rx="4" ry="4" fill="#ffffff" stroke="#ff0000" stroke-width="2" />
+  <rect x="270" y="280" width="40" height="40" rx="4" ry="4" fill="#f1f1f1" />
+  <text x="330" y="300" font-family="Arial, sans-serif" font-size="14" fill="#333">RAO RAMZAN YT DOWNLOADER_2K.jpg</text>
+  <text x="330" y="320" font-family="Arial, sans-serif" font-size="12" fill="#777">Downloaded just now - 384 KB</text>
+  
+  <!-- Instruction Callout -->
+  <path d="M650,300 L680,340 L710,300 Z" fill="#ff0000" />
+  <circle cx="710" cy="280" r="40" fill="#ff0000" />
+  <text x="710" cy="280" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#ffffff">4</text>
+  <text x="710" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#333333">Downloaded!</text>
+</svg>
